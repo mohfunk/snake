@@ -1,7 +1,7 @@
 # Snake
 
 ## Controls and Description
-A classic Snake Clone.
+A classic Snake Clone
 
 Controls:
 Press P to start the game
@@ -12,14 +12,10 @@ Press R to restart on GAMEOVER or PAUSE
 Use the Arrow Keys to move up, down, left and right
 
 
+## Installation
+First, make sure you have X11 installed.
+`$ make` to compile
+`$ ./snake` to play
 
-## Enhancement:
-1. After the snake Eats the fruit there’s a 10% chance the snake becomes invincible 
+tested on macOS and Archlinux, not sure about windows.
 
-2. After the snake Eats the fruit there’s a  20% chance the snake’s velocity increases by 1.
-
-
-
-## Development Environment
-Mac OS High Sierra
-Version 10.13.4
