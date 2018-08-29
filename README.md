@@ -2,7 +2,6 @@
 A classic Snake Clone
 
 ## Controls
-Controls:
 Press P to start the game.  
 Press P to Pause or Resume the game.  
 Press Q to Quit.  
