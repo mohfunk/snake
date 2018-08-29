@@ -8,36 +8,36 @@
 #include"fruit.h"
 
 class SnakeChain : public Displayable {
-public:
-	int dirX;
-	int dirY;
-	SnakeChain(int ix, int iy, int idirX, int idirY) : Displayable(ix,iy), dirX(idirX), dirY(idirY) {}
-	virtual void paint(XInfo &xinfo) {}
+    public:
+        int dirX;
+        int dirY;
+        SnakeChain(int ix, int iy, int idirX, int idirY) : Displayable(ix,iy), dirX(idirX), dirY(idirY) {}
+        virtual void paint(XInfo &xinfo) {}
 };
 class Snake : public Displayable {
-friend class GameManager;
-  private:
+    friend class GameManager;
+    private:
     const int blockSize;
     int directionX;
     int directionY;
     std::list<SnakeChain* > sbody;
     bool inv;
     bool hit;
-  public:
+    public:
     int velocity;
     int length;
     Snake(int ix, int iy, int vel) 
-    : Displayable(ix,iy),
-      blockSize(10),
-      velocity(vel),
-      length(0),
-      directionX(0),
-      directionY(0),
-	inv(false),
-	hit(false)
-	{
+        : Displayable(ix,iy),
+        blockSize(10),
+        velocity(vel),
+        length(0),
+        directionX(0),
+        directionY(0),
+        inv(false),
+        hit(false)
+    {
 
-	}
+    }
     ~Snake() { sbody.clear(); }
     virtual void paint(XInfo &xinfo);
     void move();
