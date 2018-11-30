@@ -1,0 +1,16 @@
+#### PROJECT SETTINGS ####
+BIN_NAME := snake
+CXX ?= g++
+SRC_EXT = cpp
+SRC_PATH = .
+LIBS = 
+COMPILE_FLAGS = -std=c++11 -Wall -Wextra -g
+RCOMPILE_FLAGS = -D NDEBUG
+DCOMPILE_FLAGS = -D DEBUG
+INCLUDES = -Iinclude -I/opt/X11/include $(SRC_PATH)
+LINK_FLAGS = -L/opt/X11/lib -lX11
+RLINK_FLAGS =
+DLINK_FLAGS =
+DESTDIR = /
+INSTALL_PREFIX = usr/local
+#### END PROJECT SETTINGS ####

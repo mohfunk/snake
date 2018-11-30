@@ -1,5 +1,5 @@
-#include "../include/xinfo.h"
-#include "../include/global.h"
+#include "xinfo.h"
+#include "global.h"
 
 
 void initX(int argc, char *argv[], XInfo &xInfo) {

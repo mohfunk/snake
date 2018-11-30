@@ -1,5 +1,5 @@
-#include "../include/snake.h"
-#include "../include/global.h"
+#include "snake.h"
+#include "global.h"
 #include <math.h>
 
 void Snake::paint(XInfo &xinfo) {

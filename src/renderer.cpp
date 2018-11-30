@@ -1,4 +1,4 @@
-#include"../include/renderer.h"
+#include"renderer.h"
 
 void Renderer::insertToDis(Displayable* dis) {
     d.push_front(dis);

@@ -1,4 +1,4 @@
-#include "../include/mainloop.h"
+#include "mainloop.h"
 MainLoop::MainLoop() {
     rl = new Renderer();
     gm = new GameManager();
